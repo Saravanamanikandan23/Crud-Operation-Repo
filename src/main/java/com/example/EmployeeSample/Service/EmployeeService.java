@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class EmployeeService {
 
-    private EmployeeRepo employeeRepo;
+    private final EmployeeRepo employeeRepo;
 
     public EmployeeService(EmployeeRepo employeeRepo) {
         this.employeeRepo = employeeRepo;
@@ -37,7 +37,7 @@ public class EmployeeService {
     }
 
     public Optional<EmployeeModel> getById(Integer id) {
-        Optional<EmployeeModel> eCommerceModel = employeeRepo.findById(id);
+        Optional<EmployeeModel> employeeModel = employeeRepo.findById(id);
         return employeeRepo.findById(id);
     }
 
