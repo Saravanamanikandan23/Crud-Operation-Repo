@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@OpenAPIDefinition(info = @Info(title = "Curd Operation Repo " , version = "1.0.0"))
+@OpenAPIDefinition(info = @Info(title = "Curd Operation Repo ", version = "1.0.0"))
 @RestController
 @RequestMapping("api/ProductDetails")
 public class EmployeeController {
@@ -23,9 +23,9 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @ApiResponse(responseCode = "200",description = "Details Created")
-    @ApiResponse(responseCode = "400",description = "Client Error")
-    @ApiResponse(responseCode = "500",description = "Internal Server Error")
+    @ApiResponse(responseCode = "200", description = "Details Created")
+    @ApiResponse(responseCode = "400", description = "Client Error")
+    @ApiResponse(responseCode = "500", description = "Internal Server Error")
     @Operation(summary = "This Operation Used to Add New User")
     @PostMapping(value = "/Created")
     @ResponseStatus(HttpStatus.CREATED)
